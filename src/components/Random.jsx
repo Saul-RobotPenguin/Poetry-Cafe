@@ -31,7 +31,11 @@ const Random = () => {
             <div className="card-body">
               <h2 className="card-title text-2xl">{title}</h2>
               <h1 className="text-xl pb-5">By {author}</h1>
-              <SendPoemToEmail />
+              <SendPoemToEmail
+                title={title}
+                author={author}
+                poemLines={poemLines}
+              />
               {poemLines.length &&
                 poemLines.map((poemLine, i) => (
                   <p className="py-1">{poemLine}</p>
