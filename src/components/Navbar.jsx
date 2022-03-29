@@ -29,7 +29,7 @@ const Navbar = () => {
                 type="checkbox"
                 className="checkbox bg-base-100"
                 id="checkbox"
-                data-toggle-theme="LightTheme, DarkTheme"
+                data-toggle-theme="LightTheme,DarkTheme"
                 data-act-class="ACTIVECLASS"
               />
               <label for="checkbox" class="label bg-base-200">
