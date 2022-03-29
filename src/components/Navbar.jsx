@@ -29,12 +29,13 @@ const Navbar = () => {
                 type="checkbox"
                 className="checkbox bg-base-100"
                 id="checkbox"
-                data-toggle-theme="LightTheme,DarkTheme"
+                data-toggle-theme="DarkTheme,LightTheme"
                 data-act-class="ACTIVECLASS"
               />
               <label for="checkbox" class="label bg-base-200">
-                <FontAwesomeIcon icon={faMugHot} className="coffee" />
                 <FontAwesomeIcon icon={faMugHot} className="chocolate" />
+                <FontAwesomeIcon icon={faMugHot} className="coffee" />
+
                 <div className="ball"></div>
               </label>
             </div>
