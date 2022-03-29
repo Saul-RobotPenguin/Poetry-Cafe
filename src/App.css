@@ -1,0 +1,44 @@
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  width: 50px;
+  height: 26px;
+  display: flex;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  transform: scale(1.5);
+}
+
+.ball {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(233, 229, 229);
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  transition: transform 0.15s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.chocolate {
+  color: #774936;
+}
+
+.coffee {
+  color: #f9cf93;
+}
+input[type="checkbox"] {
+  /* change "blue" browser chrome to yellow */
+  filter: invert(84%) sepia(5%) saturate(5882%) hue-rotate(348deg)
+    brightness(113%) contrast(95%);
+}
